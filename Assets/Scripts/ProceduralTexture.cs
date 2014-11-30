@@ -56,6 +56,14 @@ public class ProceduralTexture : MonoBehaviour {
 
 	public TextureType lastSelectedType;
 
+	public int width{
+		get{  return pixWidth; }
+	}
+
+	public int height{
+		get{  return pixHeight; }
+	}
+
 	void Awake () {
 		init( );
 
