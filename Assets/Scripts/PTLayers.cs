@@ -1,18 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CombinePTextures : MonoBehaviour {
+public class PTLayers : object {
 
-	public ProceduralTexture[] textures;
-
-	// Use this for initialization
-	void Awake () {
-		Texture2D tex = mergeLayers( textures );
-		if(gameObject.renderer)
-				gameObject.renderer.material.mainTexture = tex;
-	}
-
-	Texture2D mergeLayers( ProceduralTexture[] colorLayers ){
+	public static Texture2D merge( ProceduralTexture[] colorLayers ){
 		if(colorLayers.Length<=0)
 			return null;
 
@@ -42,9 +33,5 @@ public class CombinePTextures : MonoBehaviour {
 
 		return mergedTex;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

@@ -67,8 +67,8 @@ public class ProceduralTexture : MonoBehaviour {
 	void Awake () {
 		init( );
 
-		if(gameObject.renderer)
-			gameObject.renderer.material.mainTexture = noiseTex;
+		if(gameObject.GetComponent<Renderer>())
+			gameObject.GetComponent<Renderer>().material.mainTexture = noiseTex;
 	}
 
 	public Color[] pixColors(){
