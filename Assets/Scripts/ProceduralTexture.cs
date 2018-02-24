@@ -155,14 +155,22 @@ public class ProceduralTexture : MonoBehaviour {
 			noiseTex.Apply();
 		}
 	}
-	
-	void OnDrawGizmosSelected(){
+
+#if UNITY_EDITOR
+    void OnDrawGizmosSelected(){
 		init();
 
 		Gizmos.DrawGUITexture( new Rect(0f,0f,Screen.height,Screen.height), noiseTex);
 	}
+#endif
 
-	float turbulence( float x, float y, float size ){
+    void Update()
+    {
+       
+        Camera.main.transform.RotateAround(Vector3.zero, Vector3.up, 5 * Time.deltaTime);
+    }
+
+    float turbulence( float x, float y, float size ){
 	    float value = 0.0f;
 	    float initialSize = size;
 	    
