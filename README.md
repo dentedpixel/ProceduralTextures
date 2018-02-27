@@ -9,5 +9,5 @@ This project is presented as is, it is not a full-fledged solution for procedura
 
 
 **An example of a kitchen scene using procedural textures:**
-![](https://dl.dropboxusercontent.com/u/10227043/ProceduralTextures/KitchenScene/KitchenScene.png)
+![](http://dentedpixel.com/prototypes/Kitchen_WebGL/KitchenWood.jpg)
 <iframe src="http://dentedpixel.com/prototypes/Kitchen_WebGL/" width="600" height="400"></iframe>
