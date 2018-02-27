@@ -9,5 +9,5 @@ This project is presented as is, it is not a full-fledged solution for procedura
 
 
 **An example of a kitchen scene using procedural textures:**
-![http://dentedpixel.com/developer-diary/how-created-my-own-procedural-textures-for-unity3d/](http://dentedpixel.com/prototypes/Kitchen_WebGL/KitchenWood2.jpg)
+[![http://dentedpixel.com/developer-diary/how-created-my-own-procedural-textures-for-unity3d/](http://dentedpixel.com/prototypes/Kitchen_WebGL/KitchenWood2.jpg)]
 <iframe src="http://dentedpixel.com/prototypes/Kitchen_WebGL/" width="600" height="400"></iframe>
